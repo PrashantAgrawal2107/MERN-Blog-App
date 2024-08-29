@@ -14,6 +14,7 @@ import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import ContactPage from './pages/Contact';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
 
           <Route element={<PrivateRoute />}>
             <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/contact' element={<ContactPage />} />
           </Route>
           <Route element={<OnlyAdminPrivateRoute />}>
               <Route path='/create-post' element={<CreatePost />} />
