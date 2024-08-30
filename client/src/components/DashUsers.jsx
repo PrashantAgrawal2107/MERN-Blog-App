@@ -99,15 +99,17 @@ export default function DashUsers() {
                     )}
                   </Table.Cell>
                   <Table.Cell>
-                    <span
+                    <Button
                       onClick={() => {
                         setShowModal(true);
                         setUserIdToDelete(user._id);
-                      }}
+                      }} 
+                      disabled={user.email==='prashantagrawal2107@gmail.com'}
+                      color='none'
                       className='font-medium text-red-500 hover:underline cursor-pointer'
                     >
                       Delete
-                    </span>
+                    </Button>
                   </Table.Cell>
                 </Table.Row>
               </Table.Body>

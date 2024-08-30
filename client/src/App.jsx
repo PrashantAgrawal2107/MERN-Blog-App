@@ -15,6 +15,7 @@ import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
 import ContactPage from './pages/Contact';
+import PolicyPage from './pages/PolicyPage';
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/post/:postSlug' element={<PostPage />} />
           <Route path='search' element={<Search />} />
+          <Route path='policy' element={<PolicyPage />} />
         </Routes>
       <FooterCom />
     </BrowserRouter>
